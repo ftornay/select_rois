@@ -156,7 +156,7 @@ def get_fields():
         fields.append(r + '_y')
     return fields
 
-if __name__ == "__main__":
+def create_app():
     dirpath = g.diropenbox()
     if dirpath is None:
         sys.exit(0)
@@ -182,3 +182,6 @@ if __name__ == "__main__":
     init_dict = {'dirname': dirname,
                  'men_ver': men_ver, 'paradigma': paradigma}
     rois = Manage_rois(files, csvname, init_dict)
+
+if __name__ == "__main__":
+    create_app()
