@@ -10,8 +10,8 @@ setup(name='select_rois',
       python_requires='>=3',
       packages=['select_rois'],
       entry_points={
-          'gui_scripts: [
-            'select_rois = select_rois.__select_rois__:create_app'
+          'gui_scripts': [
+            'select_rois = select_rois.select_rois:create_app'
           ]
       },
       install_requires=[

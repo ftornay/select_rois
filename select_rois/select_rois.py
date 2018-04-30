@@ -12,7 +12,8 @@ ROIS = ["Nariz", "Dedo_derecho", "Dedo_izquierdo",
 KEYS = ["n", "d", "D", "j", "J", "b", "B", "r", "R"]
 
 INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
-        "image"]
+        #"image"
+        ]
 
 class Manage_rois:
     def __init__(self, files, csvfile, init_dict, key="n"):
