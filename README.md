@@ -1,4 +1,6 @@
 # select_rois
+Programa que ayuda a seleccionar regiones de interés (ROIS) en un directorio
+de imágenes y almacena sus posiciones en un fichero csv
 ## Instrucciones
 ### Instalación
 - Instalar python3: https://www.python.org/downloads/
