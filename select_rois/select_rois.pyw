@@ -7,12 +7,12 @@ import sys, os, glob
 import easygui as g
 import csv
 
-ROIS = ["Nariz", "Fosa_nasal_derecha", "Fosa_nasal_izquierda",
-        "Dedo_derecho", "Dedo_izquierdo",
-        "Ojo_derecho", "Ojo_izquierdo",
-        "Boca_derecha", "Boca_izquierda",
-        "Mejilla_derecha", "Mejilla_izquierda",
-        "Frente_derecha", "Frente_izquierda"]
+ROIS = ["Nariz", "Fosa_nasal_izquierda", "Fosa_nasal_derecha",
+        "Dedo_izquierdo", "Dedo_derecho",
+        "Ojo_izquierdo", "Ojo_derecho",
+        "Boca_izquierda", "Boca_derecha",
+        "Mejilla_izquierda", "Mejilla_derecha",
+        "Frente_izquierda", "Frente_derecha"]
 KEYS = ["z", "n", "N", "d", "D", "j", "J", "b", "B", "m", "M", "r", "R"]
 
 INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
@@ -20,7 +20,7 @@ INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
         ]
 
 class Manage_rois:
-    def __init__(self, files, csvfile, init_dict, key="n"):
+    def __init__(self, files, csvfile, init_dict, key="z"):
         assert len(files) > 0
         assert key in KEYS
         self.files = iter(files)
@@ -120,6 +120,7 @@ class Manage_rois:
         for k, r in self.roi_dict.items():
             msg += f'{k}: {r}\n'
         msg += '\nEnter: graba los datos de esta imagen y pasa a la siguiente'
+        msg +='\n\nVer archivo README.md para más detalles'
         g.msgbox(msg)
 
 def get_fnames(fname):

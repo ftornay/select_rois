@@ -26,20 +26,21 @@ de imágenes y almacena sus posiciones en un fichero csv
 - Puede volverse a cualquier región ya elegida volviendo a pulsar la tecla correspondiente. El programa muestra las regiones ya elegidas con puntos azules y
 la región actual con puntos rojos.
 - Las teclas para cada región son las siguientes
-(las minúsculas indican el lado derecho y las mayúsculas el izquierdo)
+(las minúsculas indican el lado izquierdo y las mayúsculas el derecho)
+(el lado izquierdo y derecho son con respecto a la imagen)
     - z: nariz
-    - n: fosa nasal derecha
-    - N: fosa nasal izquierda
-    - d: dedo derecho (indicar punta del dedo medio)
-    - D: dedo izquierdo (indicar punta del dedo medio)
-    - j: ojo derecho
-    - J: ojo izquierdo
-    - b: lado derecho de la boca (comisura)
-    - B: lado izquierdo de la boca (comisura)
-    - m: mejilla derecha
-    - M: mejilla izquierda
-    - r: lado derecho de la frente (marcar el centro de la mitad derecha)
-    - R: lado izquierdo de la frente (marcar el centro de la mitad izquierda)
+    - n: fosa nasal izquierda
+    - N: fosa nasal derecha
+    - d: dedo izquierdo (indicar punta del dedo medio)
+    - D: dedo derecho (indicar punta del dedo medio)
+    - j: ojo izquierdo
+    - J: ojo derecho
+    - b: lado izquierdo de la boca (comisura)
+    - B: lado derecho de la boca (comisura)
+    - m: mejilla izquierda
+    - M: mejilla derecha
+    - r: lado izquierdo de la frente (marcar el centro de la mitad izquierda)
+    - R: lado derecho de la frente (marcar el centro de la mitad derecha)
 - Si se pulsa la tecla _h_ aparece una ventana de ayuda con todas las teclas
 - Pulsando ENTER se graban los datos de la imagen actual y se pasa a la siguiente. El nombre de la imagen aparece en la parte superior de la misma.
 - Para salir, cerrar la ventana de la aplicación. También se termina automáticamente cuando se graban los datos de la última imagen.
