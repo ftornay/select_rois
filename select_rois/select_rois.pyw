@@ -7,11 +7,13 @@ import sys, os, glob
 import easygui as g
 import csv
 
-ROIS = ["Nariz", "Dedo_derecho", "Dedo_izquierdo",
+ROIS = ["Nariz", "Fosa_nasal_derecha", "Fosa_nasal_izquierda",
+        "Dedo_derecho", "Dedo_izquierdo",
         "Ojo_derecho", "Ojo_izquierdo",
         "Boca_derecha", "Boca_izquierda",
+        "Mejilla_derecha", "Mejilla_izquierda",
         "Frente_derecha", "Frente_izquierda"]
-KEYS = ["n", "d", "D", "j", "J", "b", "B", "r", "R"]
+KEYS = ["z", "n", "N", "d", "D", "j", "J", "b", "B", "m", "M", "r", "R"]
 
 INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
         #"image"
