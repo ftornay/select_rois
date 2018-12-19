@@ -138,9 +138,10 @@ def get_matnames(dirpath, removeFiles=[]):
     files = set(glob.glob(os.path.join(dirpath, '*.MAT')))
     rf = [os.path.join(dirpath, f) + '.MAT' for f in removeFiles]
     files -= set(rf)
+    files = list(files)
     # Randomize the list of files so as not to favor any particular file
     # being labeled first
-    files = random.shuffle(list(files))
+    random.shuffle(files)
     return files
 
 def get_files_csv(filename):
