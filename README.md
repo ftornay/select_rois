@@ -29,8 +29,8 @@ la región actual con puntos rojos.
 (las minúsculas indican el lado izquierdo y las mayúsculas el derecho)
 (el lado izquierdo y derecho son con respecto a la imagen)
     - z: nariz
-    - n: fosa nasal izquierda
-    - N: fosa nasal derecha
+    - n: fosa nasal izquierda (marcar debajo de la fosa, no sobre ella)
+    - N: fosa nasal derecha (marcar debajo de la fosa, no sobre ella)
     - d: dedo izquierdo (indicar punta del dedo medio)
     - D: dedo derecho (indicar punta del dedo medio)
     - j: ojo izquierdo (marcar la pupila)
@@ -39,8 +39,8 @@ la región actual con puntos rojos.
     - B: lado derecho de la boca (comisura)
     - m: mejilla izquierda (marcar a la altura de la nariz y por debajo de la esquina externa del ojo)
     - M: mejilla derecha (marcar a la altura de la nariz y por debajo de la esquina externa del ojo)
-    - r: lado izquierdo de la frente (por encima de la esquina interna del ojo, a la altura de la mitad de la frente o un poco por debajo)
-    - R: lado derecho de la frente (por encima de la esquina interna del ojo, a la altura de la mitad de la frente o un poco por debajo)
+    - r: lado izquierdo de la frente (por encima de la esquina interna del ojo izquierdo, a la altura de la mitad de la frente o un poco por debajo)
+    - R: lado derecho de la frente (por encima de la esquina interna del ojo derecho, a la altura de la mitad de la frente o un poco por debajo)
 - Si se pulsa la tecla _h_ aparece una ventana de ayuda con todas las teclas
 - Pulsando ENTER se graban los datos de la imagen actual y se pasa a la siguiente. El nombre de la imagen aparece en la parte superior de la misma.
 - Para salir, cerrar la ventana de la aplicación. También se termina automáticamente cuando se graban los datos de la última imagen.
