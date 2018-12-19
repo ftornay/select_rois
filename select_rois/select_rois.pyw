@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from scipy.io import loadmat
 import sys, os, glob
 import easygui as g
-import csv
+import csv, random
 
 ROIS = ["Nariz", "Fosa_nasal_izquierda", "Fosa_nasal_derecha",
         "Dedo_izquierdo", "Dedo_derecho",
@@ -138,7 +138,10 @@ def get_matnames(dirpath, removeFiles=[]):
     files = set(glob.glob(os.path.join(dirpath, '*.MAT')))
     rf = [os.path.join(dirpath, f) + '.MAT' for f in removeFiles]
     files -= set(rf)
-    return list(files)
+    # Randomize the list of files so as not to favor any particular file
+    # being labeled first
+    files = random.shuffle(list(files))
+    return files
 
 def get_files_csv(filename):
     """ Returns which files are already in the csv file if it exists
