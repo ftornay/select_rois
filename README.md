@@ -10,6 +10,8 @@ de matrices y almacena sus posiciones en un fichero csv
     https://pypi.org/project/setuptools/
 - Entrar en el directorio descargado: "select_rois"
 - Ejecutar python setup install
+- Nota: En vez de eso, en Windows puede ejecutarse el script install_select_rois.bat para instalar el programa.
+    - El script asume que existe el ejecutable C:\Windows\py.exe
 ### Uso
 - Entrar en el directorio select_rois
 - Para iniciar el programa ejecutar:
