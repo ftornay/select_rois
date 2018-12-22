@@ -136,6 +136,7 @@ def get_mat(filename):
 
 def get_matnames(dirpath, removeFiles=[]):
     files = set(glob.glob(os.path.join(dirpath, '*.MAT')))
+    files = files.union(set(glob.glob(os.path.join(dirpath, '*.mat'))))
     rf = [os.path.join(dirpath, f) + '.MAT' for f in removeFiles]
     files -= set(rf)
     files = list(files)
