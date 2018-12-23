@@ -15,6 +15,7 @@ setup(name='select_rois',
           ]
       },
       install_requires=[
+          'pillow',
           'matplotlib',
           'scipy',
           'easygui'
