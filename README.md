@@ -1,6 +1,6 @@
 # select_rois
-Programa que ayuda a seleccionar regiones de interés (ROIS) en un directorio
-de matrices y almacena sus posiciones en un fichero csv
+Programa que ayuda a seleccionar regiones de interés (ROIS) de un directorio
+de matrices o de un archivo SEQ y almacena sus posiciones en un fichero csv
 ## Instrucciones
 ### Requisitos
 - Instalar python3: https://www.python.org/downloads/
@@ -63,5 +63,5 @@ la región actual con puntos rojos.
 - Pulsando ENTER se graban los datos de la imagen actual y se pasa a la siguiente. El nombre de la imagen aparece en la parte superior de la misma.
 - Para salir, cerrar la ventana de la aplicación. También se termina automáticamente cuando se graban los datos de la última imagen.
 - Cuando el program comienza comprueba si existen datos ya grabados y solo presenta las imágenes que falta por etiquetar
-- Los datos se graban en un fichero con el mismo nombre del directorio y la extensión _csv_
+- Los datos se graban en un fichero con el mismo nombre del directorio o del archivo SEQ y la extensión _csv_
 
