@@ -58,7 +58,8 @@ la región actual con puntos rojos.
     - r: lado izquierdo de la frente (por encima de la esquina interna del ojo izquierdo, a la altura de la mitad de la frente o un poco por debajo)
     - R: lado derecho de la frente (por encima de la esquina interna del ojo derecho, a la altura de la mitad de la frente o un poco por debajo)
 - Ejemplo de imagen etiquetada
-    - Está seleccionada la boca derecha, que aparece en rojo
+    - Está seleccionada la boca derecha, que aparece en rojo y cuyas coordenadas
+    se muestran bajo la imagen
     - Nótese que el lado derecho corresponde con el de la imagen, no con el de la persona
 ![ejemplo](https://raw.githubusercontent.com/ftornay/select_rois/master/imagen_marcada.png)
 - Si se pulsa la tecla _h_ aparece una ventana de ayuda con todas las teclas
