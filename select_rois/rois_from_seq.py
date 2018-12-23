@@ -27,22 +27,19 @@ class Manage_rois:
         plain, path = get_fnames(filename)
         self.csvfile = os.path.splitext(path)[0]
         self.csvfile += '.csv'
-        removeImages = get_images_csv(self.csvfile)
-        self.frames = {f"{plain}_{i:05}": f
-                for i,f in enumerate(split_seq(path))}
-        for im_name in removeImages:
-            try:
-                del self.frames[im_name]
-            except KeyError:
-                continue
-        self.imgnames = list(self.frames.keys())
-        if len(self.imgnames) < 1:
+        removeImages = set(get_images_csv(self.csvfile))
+        frms = split_seq(path)
+        names = set(f"{plain}_{i:05}" for i in range(len(frms)))
+        self.frames = dict(zip(names, frms))
+        names -= removeImages
+        names = list(names)
+        if len(names) < 1:
             msg = f"No se encuentran nuevas imágenes en {dirpath}"
             g.msgbox(msg, title="Error!")
             sys.exit(-1)
         # Randomize image list 
-        random.shuffle(self.imgnames)
-        self.imgnames = iter(self.imgnames)
+        random.shuffle(names)
+        self.imgnames = iter(names)
         self.init_dict = init_dict
         self.roi_dict = dict(zip(KEYS, ROIS))
         self.clear_coords()
