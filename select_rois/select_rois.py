@@ -20,13 +20,13 @@ INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
         ]
 
 class Manage_rois:
-    def __init__(self, files, csvfile, init_dict, key="z"):
+    def __init__(self, files, csvfile, init_dict, init_key="z"):
         assert len(files) > 0
-        assert key in KEYS
+        assert init_key in KEYS
+        self.init_key = init_key
         self.files = iter(files)
         self.csvfile = csvfile
         self.init_dict = init_dict
-        self.current_key = key
         self.roi_dict = dict(zip(KEYS, ROIS))
         self.clear_coords()
         self.create_image()
@@ -74,6 +74,7 @@ class Manage_rois:
 
     def clear_coords(self):
         self.coords = {}
+        self.current_key = self.init_key
 
     def update_text(self):
         roi = self.current_roi
