@@ -161,7 +161,7 @@ def get_files_csv(filename):
     return files
 
 def get_fields():
-    fields = INIT_FIELDS
+    fields = INIT_FIELDS[:]
     for r in ROIS:
         fields.append(r + '_x')
         fields.append(r + '_y')

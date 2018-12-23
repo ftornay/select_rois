@@ -56,7 +56,7 @@ class Manage_rois:
             extra_dict[c + "_x"] = self.coords[c][0]
             extra_dict[c + "_y"] = self.coords[c][1]
         data = {**self.init_dict, **extra_dict}
-        with open(self.csvfile, "a+") as f:
+        with open(self.csvfile, "a") as f:
             writer = csv.DictWriter(f, get_fields())
             writer.writerow(data)
 
@@ -166,7 +166,7 @@ def get_images_csv(filename):
     return files
 
 def get_fields():
-    fields = INIT_FIELDS
+    fields = INIT_FIELDS[:]
     for r in ROIS:
         fields.append(r + '_x')
         fields.append(r + '_y')
