@@ -2,27 +2,41 @@
 Programa que ayuda a seleccionar regiones de interés (ROIS) en un directorio
 de matrices y almacena sus posiciones en un fichero csv
 ## Instrucciones
-### Instalación
-- Descargar programa de: https://github.com/ftornay/select_rois
+### Requisitos
 - Instalar python3: https://www.python.org/downloads/
 - Nota: la instalación requiere el paquete setuptools:
     Si no se instala automáticamente con python, descargar de
     https://pypi.org/project/setuptools/
+- Nota: para etiquetar ficheros SEQ es necesario instalar exiftool:
+    - Descargar de https://www.sno.phy.queensu.ca/~phil/exiftool/
+    - En linux, poner en path
+    - En Windows, copiar a C:\Windows\exiftool.exe
+### Instalación del programa
+- El programa se descarga de: https://github.com/ftornay/select_rois
 - Entrar en el directorio descargado: "select_rois"
 - Ejecutar python setup install
 - Nota: En vez de eso, en Windows puede ejecutarse el script install_select_rois.bat para instalar el programa.
-    - El script asume que existe el ejecutable C:\Windows\py.exe
+    - El script asume que existe el lanzador C:\Windows\py.exe
 ### Uso
+#### Para etiquetar ficheros mat
 - Entrar en el directorio select_rois
 - Para iniciar el programa ejecutar:
     > python select_rois/select_rois.pyw
 - En Windows puede usarse en vez de eso (no saca ventana de terminal):
     > pythonw select_rois/select_rois.pyw
 - La aplicación pide primero elegir un directorio con imágenes térmicas
-- Y después, rellenar información sobre el vídeo:
+#### Para etiquetar un fichero SEQ
+- Entrar en el directorio select_rois
+- Para iniciar el programa ejecutar:
+    > python select_rois/rois_from_seq.pyw
+- En Windows puede usarse en vez de eso (no saca ventana de terminal):
+    > pythonw select_rois/rois_from_seq.pyw
+- La aplicación pide primero elegir un fichero SEQ
+#### Para las dos posibilidades
+- Después de elegir la ruta, rellenar información sobre el vídeo:
     Si es de alguien diciendo la verdad o mintiendo (o no se sabe)
     Qué procedimiento experimental se usó: estrés, ecológico u otro
-- Después va presentando cada imagen (fotograma) del directorio en una ventana
+- Después el programa va presentando cada imagen (fotograma)
 - Cada región de interés corresponde con una tecla.
     Tras pulsar la tecla aparece el nombre de la región en la parte inferior de la ventana y se puede elegir dónde está esa región con ayuda del ratón
 - Puede volverse a cualquier región ya elegida volviendo a pulsar la tecla correspondiente. El programa muestra las regiones ya elegidas con puntos azules y
