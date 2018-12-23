@@ -2,7 +2,6 @@
 """Program that presents thermographical images, lets you select
 where different regions of interest are and stores the positions"""
 from matplotlib import pyplot as plt
-from scipy.io import loadmat
 import sys, os, glob
 import easygui as g
 import csv, random
