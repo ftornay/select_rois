@@ -27,10 +27,10 @@ class Manage_rois:
         plain, path = get_fnames(filename)
         self.csvfile = os.path.splitext(path)[0]
         self.csvfile += '.csv'
+        self.frames = {f"{plain}_{i:05}": f
+                for i, f in enumerate(split_seq(path))}
+        names = set(self.frames.keys())
         removeImages = set(get_images_csv(self.csvfile))
-        frms = split_seq(path)
-        names = set(f"{plain}_{i:05}" for i in range(len(frms)))
-        self.frames = dict(zip(names, frms))
         names -= removeImages
         names = list(names)
         if len(names) < 1:
