@@ -57,6 +57,8 @@ la región actual con puntos rojos.
     - M: mejilla derecha (marcar a la altura de la nariz y por debajo de la esquina externa del ojo)
     - r: lado izquierdo de la frente (por encima de la esquina interna del ojo izquierdo, a la altura de la mitad de la frente o un poco por debajo)
     - R: lado derecho de la frente (por encima de la esquina interna del ojo derecho, a la altura de la mitad de la frente o un poco por debajo)
+- Ejemplo de imagen etiquetada:
+![ejemplo](https://raw.githubusercontent.com/ftornay/select_rois/master/imagen_marcada.png)
 - Si se pulsa la tecla _h_ aparece una ventana de ayuda con todas las teclas
 - Pulsando ENTER se graban los datos de la imagen actual y se pasa a la siguiente. El nombre de la imagen aparece en la parte superior de la misma.
 - Para salir, cerrar la ventana de la aplicación. También se termina automáticamente cuando se graban los datos de la última imagen.
