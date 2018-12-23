@@ -18,7 +18,8 @@ def get_raw(frame):
         result = subprocess.run(["C:/Windows/exiftool.exe",
                 "-b", "-RawThermalImage", "-"],
             input = frame,
-            stdout = subprocess.PIPE)
+            stdout = subprocess.PIPE,
+            creationflags=subprocess.CREATE_NO_WINDOW)
     # Read thermal image into matrix
     img_file = BytesIO(result.stdout)
     raw = np.array(Image.open(img_file))
