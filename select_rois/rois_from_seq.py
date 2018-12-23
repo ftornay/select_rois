@@ -40,6 +40,8 @@ class Manage_rois:
             msg = f"No se encuentran nuevas imágenes en {dirpath}"
             g.msgbox(msg, title="Error!")
             sys.exit(-1)
+        # Randomize image list 
+        random.shuffle(self.imgnames)
         self.imgnames = iter(self.imgnames)
         self.init_dict = init_dict
         self.current_key = key
