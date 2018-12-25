@@ -12,8 +12,10 @@ ROIS = ["Nariz", "Fosa_nasal_izquierda", "Fosa_nasal_derecha",
         "Ojo_izquierdo", "Ojo_derecho",
         "Boca_izquierda", "Boca_derecha",
         "Mejilla_izquierda", "Mejilla_derecha",
-        "Frente_izquierda", "Frente_derecha"]
-KEYS = ["z", "n", "N", "d", "D", "j", "J", "b", "B", "m", "M", "r", "R"]
+        "Frente_izquierda", "Frente_derecha",
+        "Menton_izquierdo", "Menton_derecho"]
+KEYS = ["z", "n", "N", "d", "D", "j", "J", "b", "B", "m", "M", "r", "R",
+        "t", "T"]
 
 INIT_FIELDS = ["dirname", "men_ver", "paradigma", "image_name",
         #"image"
@@ -137,7 +139,6 @@ def get_mat(filename):
 
 def get_matnames(dirpath, removeFiles=[]):
     files = set(glob.glob(os.path.join(dirpath, '*.MAT')))
-    files = files.union(set(glob.glob(os.path.join(dirpath, '*.mat'))))
     rf = [os.path.join(dirpath, f) + '.MAT' for f in removeFiles]
     files -= set(rf)
     files = list(files)

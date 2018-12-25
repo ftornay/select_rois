@@ -57,6 +57,8 @@ la región actual con puntos rojos.
     - M: mejilla derecha (marcar a la altura de la nariz y por debajo de la esquina externa del ojo)
     - r: lado izquierdo de la frente (por encima de la esquina interna del ojo izquierdo, a la altura de la mitad de la frente o un poco por debajo)
     - R: lado derecho de la frente (por encima de la esquina interna del ojo derecho, a la altura de la mitad de la frente o un poco por debajo)
+    - t: Parte izquierda del mentón
+    - T: Parte derecha del mentón
 - Ejemplo de imagen etiquetada
     - Está seleccionada la boca derecha, que aparece en rojo y cuyas coordenadas
     se muestran bajo la imagen
